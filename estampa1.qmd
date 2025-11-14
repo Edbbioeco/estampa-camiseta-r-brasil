@@ -1,0 +1,97 @@
+---
+format: pdf
+geometry: 
+  - top=4cm
+  - bottom=4cm
+  - left=4cm
+  - right=4cm
+---
+```{r}
+#| label: setup
+#| include: false
+library(qrcode)
+```
+
+\thispagestyle{empty}
+
+::::{layout="[0.3, 0.4, 0.3]"}
+:::{#col1}
+\raggedright
+```{r}
+#| label: qrcode-R-1
+#| echo: false
+qr_code(
+  "https://t.me/rbrasiloficial", 
+  ecl = "H"
+) |> 
+  plot()
+```
+:::
+:::{#col2}
+\centering
+\fontsize{80}{80}\selectfont
+R
+:::
+:::{#col3}
+\raggedleft
+```{r}
+#| label: qrcode-R-2
+#| echo: false
+qr_code(
+  "https://t.me/rbrasiloficial", 
+  ecl = "H"
+) |> 
+  plot()
+```
+:::
+::::
+
+\centering
+
+\fontsize{40}{35}\selectfont
+Brasil
+
+\fontsize{32}{40}\selectfont
+no \texttt{telegram}
+
+\fontsize{16}{30}\selectfont
+\texttt{https://t.me/rbrasiloficial}
+
+
+\vspace{3em}
+
+
+:::: {layout="[0.3, 0.63, 0.07]"}
+::: {#col-qrcode-repo-github}
+\raggedright
+```{r}
+#| label: qrcode-repo-github
+#| fig-align: right
+#| echo: false
+
+qr_code(
+  "https://github.com/mvf-each-usp/estampa-camiseta-r-brasil",
+  ecl = "L"
+) |> 
+  plot()
+```
+:::
+::: {#col-texto}
+\raggedleft
+\fontsize{6}{8}\selectfont
+\vspace{3em}
+Feito com: RStudio, Quarto Markdown, \LaTeX\ e amor `S2`
+\par
+Fonte original:
+\par
+`https://github.com/mvf-each-usp/estampa-camiseta-r-brasil`
+\par
+Fonte atual:
+\par
+`https://github.com/o-seu-login/o-seu-repositorio`
+\par
+Entre e forke à vontade `=D`
+:::
+:::{#filler}
+:::
+::::
