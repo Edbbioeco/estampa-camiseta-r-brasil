@@ -2,8 +2,7 @@
 format: 
   pdf:
     include-in-header: |
-      \usepackage{fontspec}
-      \setmainfont{Times New Roman}
+      \usepackage{stix}
 geometry: 
   - top=4cm
   - bottom=4cm
@@ -91,16 +90,16 @@ qr_code(
 :::
 ::: {#texto-3-2}
 \raggedleft
-\fontsize{8}{11}\selectfont
-Feito com: RStudio, Quarto Markdown, \LaTeX\ e amor `S2`
+\fontsize{6}{8}\selectfont
+Feito com:\par
+\bullet RStudio, \par
+\bullet Quarto, \par
+\bullet \LaTeX\ e \par
+\bullet amor `S2`
 \par
-Fonte original $\downarrow$
+Fonte da estampa $\linefeed$ 
 \par
 `https://github.com/mvf-each-usp/estampa-camiseta-r-brasil`
-\par
-Fonte atual $\downarrow$
-\par
-`https://github.com/o-seu-login/o-seu-repositorio  XD`
 \par
 Entre e forke à vontade\ \ `=D`
 :::
